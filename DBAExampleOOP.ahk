@@ -8,6 +8,7 @@ global databaseType := ""
 global currentDB := null ; current db connection
 
 connectionStrings := A_ScriptDir "\Test\TestDB.sqlite||Server=localhost;Port=3306;Database=test;Uid=root;Pwd=toor;|Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" A_ScriptDir "\Test\TestDB.mdb"
+. "|Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" A_ScriptDir "\Test\TestDB.accdb"
 
 Gui, +LastFound +OwnDialogs
 Gui, Margin, 10, 10
